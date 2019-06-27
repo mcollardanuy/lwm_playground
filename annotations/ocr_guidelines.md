@@ -40,18 +40,23 @@ If a sentence contains machine objects, we are also interested in the **semantic
 #### Examples
 
 * **Sentence:** "Machines will destroy us".
-  * Agent: machines
-  * Patient: us
-  * Verb: will destroy
+  * Agent: `machines`
+  * Patient: `us`
+  * Verb: `will destroy`
 
 * **Sentence:** "With a spinning jenny a worker could spin several threads at once".
-  * Agent: a worker
-  * Patient: several threads
-  * Verb: could spin
+  * Agent: `a worker`
+  * Patient: `several threads`
+  * Verb: `could spin`
 
 ## How to annotate
 
 ### Entities
+* On the RHS column, select "Layer: `custom_ent`".
 * Select with the mouse the span of text you want to annotate as an entity (or double-click on the word, if the entity consists of just one word.
-* Make sure that on the right column you've selected "Layer: `custom_ent`"
 * Change the value to the correct annotation (`PER` for people, `LOC` for locations, `ORG` for organisations, `MOBJ` for machine objects).
+
+### Semantic relations
+* On the RHS column, select "Layer: `sem_roles`".
+* Select with the mouse the span of text you want to annotate as either `verb`, `agent` or `patient`, from the argument drop-down menu. Try to annotate the full verb (e.g. `will destroy` instead of just `destroy`), and to annotate the full noun phrase in the case of the `agent` and the `patient` (e.g. `the thrashing machine` instead of `thrashing machine`).
+* Click on the `patient` or the `agent` annotations and drag the mouse until the annotation of the `verb`.
