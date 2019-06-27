@@ -1,12 +1,12 @@
 ## WikiGazetteer
 
 Gazetteer generated from Wikipedia and enriched with Geonames data. Data used to create it:
-$ https://dumps.wikimedia.org/enwiki/20190320/enwiki-20190320-redirect.sql.gz
-$ https://dumps.wikimedia.org/enwiki/20190320/enwiki-20190320-page.sql.gz
-$ https://dumps.wikimedia.org/enwiki/20190320/enwiki-20190320-geo_tags.sql.gz
-$ http://download.geonames.org/export/dump/cities500.zip
-$ http://download.geonames.org/export/dump/alternateNamesV2.zip
-$ https://github.com/alan-turing-institute/Living-with-Machines-code/blob/master/language-lab-mro/gazetteer_construction/locdisENinlinks.json (not open-access yet)
+* https://dumps.wikimedia.org/enwiki/20190320/enwiki-20190320-redirect.sql.gz
+* https://dumps.wikimedia.org/enwiki/20190320/enwiki-20190320-page.sql.gz
+* https://dumps.wikimedia.org/enwiki/20190320/enwiki-20190320-geo_tags.sql.gz
+* http://download.geonames.org/export/dump/cities500.zip
+* http://download.geonames.org/export/dump/alternateNamesV2.zip
+* https://github.com/alan-turing-institute/Living-with-Machines-code/blob/master/language-lab-mro/gazetteer_construction/locdisENinlinks.json (not open-access yet)
 
 ### Tables in gazetteer:
 
