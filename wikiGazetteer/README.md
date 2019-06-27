@@ -89,7 +89,7 @@ WHERE wiki_title="Quebec_City"
 +------------------+---------------+-------------+
 23 rows in set (0.38 sec)
 ```
-Note: Wiki URL for Quebec City is `https://en.wikipedia.org/wiki/Quebec_City`, so `wiki_title` is just `Quebec_City`)
+> **Note:** Wiki URL for Quebec City is `https://en.wikipedia.org/wiki/Quebec_City`, so `wiki_title` is just `Quebec_City`)
 
 Return number wiki title and number of inlinks for all locations that may be known as "Barcelona":
 ```
