@@ -10,7 +10,7 @@ Gazetteer generated from Wikipedia and enriched with Geonames, **still under con
 
 ### Tables in gazetteer:
 
-* Table `location`:
+* **Table `location`:**
   * `id`: id of the location in the gazetteer
   * `wiki_id`: id of the corresponding wikipedia entry (source: wikipedia `page.page_id`)
   * `wikigt_id`: id of the corresponding entry in wikipedia `geo_tags` table (source: wikipedia `geo_tags.gt_id`)
@@ -25,7 +25,7 @@ Gazetteer generated from Wikipedia and enriched with Geonames, **still under con
   * `region`: region of location (source: wikipedia `geo_tags.region`)
   * `population`: population of location if populated place (source: geonames `geoname.population`)
 
-* Table `altname`:
+* **Table `altname`:**
   * `id`: id of the altname in the gazetteer
   * `main_id`: reference to `location.id`
   * `altname`: alternate name of the location
@@ -36,7 +36,7 @@ Gazetteer generated from Wikipedia and enriched with Geonames, **still under con
     * `geonamesascii`: Main geonames name of location, ascii-ed, if different (source: geonames `geoname.asciiname`)
     * `geonamesalt`: Alternate name from geonames (source: geonames `alternateNamesV2.alternatename`)
 
-* Table `inlinks`:
+* **Table `inlinks`:**
   * `main_id`: reference to `location.id`
   * `inlinks`: number of pages linking to this location's page in Wikipedia (source: `locdisENlinks.json`)
 
