@@ -11,6 +11,9 @@
 1. Select the project, either "Annotation of bad quality OCR articles" or "Annotation of good quality OCR articles"
 2. Click on "Annotation" tab from the left hand side column.
 3. Select the first article from the range of articles we've suggested, and click on "Open".
+  * A file name in black means that the article has never been opened by you.
+  * A file name in blue means that you have opened the file, and maybe started annotating it.
+  * A file name in red means that you have completed the annotation (see point 7).
 4. Recommended: go to "Settings" and change "Page size" to 200.
 5. Annotate the article (see section below: "How to annotate")
 6. Click on "Page > Next" to go to the second page of the article, if needed.
@@ -49,3 +52,6 @@ If a sentence contains machine objects, we are also interested in the **semantic
 ## How to annotate
 
 ### Entities
+* Select with the mouse the span of text you want to annotate as an entity (or double-click on the word, if the entity consists of just one word.
+* Make sure that on the right column you've selected "Layer: `custom_ent`"
+* Change the value to the correct annotation (`PER` for people, `LOC` for locations, `ORG` for organisations, `MOBJ` for machine objects).
