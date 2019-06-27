@@ -1,6 +1,6 @@
 ## WikiGazetteer
 
-Gazetteer generated from Wikipedia and enriched with Geonames data, **still under construction**. Data used to create it:
+Gazetteer generated from Wikipedia and enriched with Geonames, **still under construction**. Data used to create it:
 * https://dumps.wikimedia.org/enwiki/20190320/enwiki-20190320-redirect.sql.gz
 * https://dumps.wikimedia.org/enwiki/20190320/enwiki-20190320-page.sql.gz
 * https://dumps.wikimedia.org/enwiki/20190320/enwiki-20190320-geo_tags.sql.gz
