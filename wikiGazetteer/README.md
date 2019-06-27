@@ -1,6 +1,6 @@
 ## WikiGazetteer
 
-Gazetteer generated from Wikipedia and enriched with Geonames data. Data used to create it:
+Gazetteer generated from Wikipedia and enriched with Geonames data, **still under construction**. Data used to create it:
 * https://dumps.wikimedia.org/enwiki/20190320/enwiki-20190320-redirect.sql.gz
 * https://dumps.wikimedia.org/enwiki/20190320/enwiki-20190320-page.sql.gz
 * https://dumps.wikimedia.org/enwiki/20190320/enwiki-20190320-geo_tags.sql.gz
@@ -12,33 +12,33 @@ Gazetteer generated from Wikipedia and enriched with Geonames data. Data used to
 
 * Table `location`:
   * `id`: id of the location in the gazetteer
-  * `wiki_id`: id of the corresponding wikipedia entry (wikipedia `page.page_id`)
-  * `wikigt_id`: id of the corresponding entry in wikipedia `geo_tags` table (wikipedia `geo_tags.gt_id`)
-  * `geo_id`: id of the corresponding entry in geonames (geonames `geoname.id`)
-  * `wiki_title`: wikipedia title, which is the last part of a Wikipedia URL (wikipedia `page.page_title`)
-  * `page_len`: wikipedia page length (wikipedia `page.page_len`)
-  * `lat`: latitude corresponding to the location (wikipedia `geo_tags.gt_lat`)
-  * `lon`: longitude corresponding to the location (wikipedia `geo_tags.gt_lat`) 
-  * `dim`: approximate size of an object, default in metres, optional km suffix (wikipedia `geo_tags.dim`)
-  * `type`: type of object with these coordinates, can be one of the following: country, satellite, state, adm1st, adm2nd, adm3rd, city, isle, mountain, river, waterbody, event, forest, glacier, airport, railwaystation, edu, pass, camera, landmark (wikipedia `geo_tags.type`)
-  * `country`: country code of location (wikipedia `geo_tags.country` and geonames `geoname.countrycode`)
-  * `region`: region of location (wikipedia `geo_tags.region`)
-  * `population`: population of location if populated place (geonames `geoname.population`)
+  * `wiki_id`: id of the corresponding wikipedia entry (source: wikipedia `page.page_id`)
+  * `wikigt_id`: id of the corresponding entry in wikipedia `geo_tags` table (source: wikipedia `geo_tags.gt_id`)
+  * `geo_id`: id of the corresponding entry in geonames (source: geonames `geoname.id`)
+  * `wiki_title`: wikipedia title, which is the last part of a Wikipedia URL (source: wikipedia `page.page_title`)
+  * `page_len`: wikipedia page length (source: wikipedia `page.page_len`)
+  * `lat`: latitude corresponding to the location (source: wikipedia `geo_tags.gt_lat`)
+  * `lon`: longitude corresponding to the location (source: wikipedia `geo_tags.gt_lat`) 
+  * `dim`: approximate size of an object, default in metres, optional km suffix (source: wikipedia `geo_tags.dim`)
+  * `type`: type of object with these coordinates, can be one of the following: country, satellite, state, adm1st, adm2nd, adm3rd, city, isle, mountain, river, waterbody, event, forest, glacier, airport, railwaystation, edu, pass, camera, landmark (source: wikipedia `geo_tags.type`)
+  * `country`: country code of location (source: wikipedia `geo_tags.country` and geonames `geoname.countrycode`)
+  * `region`: region of location (source: wikipedia `geo_tags.region`)
+  * `population`: population of location if populated place (source: geonames `geoname.population`)
 
 * Table `altname`:
   * `id`: id of the altname in the gazetteer
   * `main_id`: reference to `location.id`
   * `altname`: alternate name of the location
   * `source`: source of the alternate name. Types:
-    * `wikimain`: Wikipedia title, cleaned (wikipedia `page.page_title`)
-    * `wikiredirect`: Wikipedia title of a redirecting page, cleaned (wikipedia `page.page_title`)
-    * `geonamesmain`: Main geonames name of location (geonames `geoname.name`)
-    * `geonamesascii`: Main geonames name of location, ascii-ed, if different (geonames `geoname.asciiname`)
-    * `geonamesalt`: Alternate name from geonames (geonames `alternateNamesV2.alternatename`)
+    * `wikimain`: Wikipedia title, cleaned (source: wikipedia `page.page_title`)
+    * `wikiredirect`: Wikipedia title of a redirecting page, cleaned (source: wikipedia `page.page_title`)
+    * `geonamesmain`: Main geonames name of location (source: geonames `geoname.name`)
+    * `geonamesascii`: Main geonames name of location, ascii-ed, if different (source: geonames `geoname.asciiname`)
+    * `geonamesalt`: Alternate name from geonames (source: geonames `alternateNamesV2.alternatename`)
 
-* Table `inlinks`: (minimal approach, see below for proper approach):
+* Table `inlinks`:
   * `main_id`: reference to `location.id`
-  * `inlinks`: number of pages linking to this location's page in Wikipedia.
+  * `inlinks`: number of pages linking to this location's page in Wikipedia (source: `locdisENlinks.json`)
 
 ### Examples of queries:
 
