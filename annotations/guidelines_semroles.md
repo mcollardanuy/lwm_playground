@@ -20,7 +20,7 @@ We are interested in the **semantic roles** in sentences (i.e. the role that the
 
 Different people are likely to annotate things in this task, and these differences are very valuable, as we can see how different disciplines may think of agency differently.
 
-Check out [this](https://web.stanford.edu/~jurafsky/slp3/18.pdf) and [this (pages 94-95)](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.476.8124&rep=rep1&type=pdf) for more info on semantic role labelling.
+#### Questions and answers
 
 Link to Questions and answers and a more detailed description of each semantic role [here](https://docs.google.com/document/d/1NLenqdv-mD298XVLs3LTUmebLBAgcaAzlGYaFLmH-LM/edit).
   
