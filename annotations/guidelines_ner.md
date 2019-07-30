@@ -18,4 +18,4 @@ We are interested in the following entities:
 * Change the value to the correct annotation (`PER` for people, `LOC` for locations, `ORG` for organisations, `MOBJ` for machine objects).
 * If you want to delete an annotation, click on the annotation that you want to delete and click on "Delete" on the RHS column.
 
-![See example here](https://github.com/alan-turing-institute/Living-with-Machines/blob/master/working_documents/labs/language/mro_subgroups/annotation/nerGood.png)
+![See example here](https://github.com/mcollardanuy/lwm_playground/blob/master/annotations/nerGood.png)
