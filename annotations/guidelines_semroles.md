@@ -33,4 +33,4 @@ Link to Questions and answers and a more detailed description of each semantic r
 * There is a `comment` box for each annotation of a semantic role: please write any doubt, idea, complain, suggestion, etc in this box.
 * If there is no verb or nothing to annotate in the whole file, just click on "Workflow>finish" and go to the next article ("Document>Next").
 
-![See example here](https://github.com/alan-turing-institute/Living-with-Machines/blob/master/working_documents/labs/language/mro_subgroups/annotation/semrolesGood.png)
+![See example here](https://github.com/mcollardanuy/lwm_playground/blob/master/annotations/semrolesGood.png)
