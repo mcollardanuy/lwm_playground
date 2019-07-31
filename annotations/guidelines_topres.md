@@ -47,4 +47,4 @@ Besides, the collections of text that we have are considerably regional. This ad
 
 ### Example
 
-![Example](https://github.com/alan-turing-institute/Living-with-Machines/blob/master/working_documents/labs/language/mro_subgroups/annotation/topres.png)
+![Example](https://github.com/mcollardanuy/lwm_playground/blob/master/annotations/topres.png)
