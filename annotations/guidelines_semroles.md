@@ -22,7 +22,7 @@ Different people are likely to annotate things in this task, and these differenc
 
 #### Questions and answers
 
-Link to Questions and answers and a more detailed description of each semantic role [here](https://docs.google.com/document/d/1NLenqdv-mD298XVLs3LTUmebLBAgcaAzlGYaFLmH-LM/edit).
+Link to Questions and answers with examples, and a more detailed description of each semantic role [here](https://docs.google.com/document/d/1NLenqdv-mD298XVLs3LTUmebLBAgcaAzlGYaFLmH-LM/edit).
   
 #### How to annotate
 * On the RHS column, make sure you have selected the Layer `SemRoles` (if you don't see it, make sure you are in an 'semroles' project).
