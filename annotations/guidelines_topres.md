@@ -1,6 +1,6 @@
 ## Toponym resolution annotations
 
-This document contains the annotation guidelines for marking up and georeferencing locations mentioned in unstructured historical texts. The task of the annotator is to recognize each location mentioned in the text and map it to the URL of the Wikipedia article that refers to it.
+This document contains the annotation guidelines for marking up and georeferencing locations mentioned in historical texts. The task of the annotator is to recognize each location mentioned in the text and map it to the URL of the Wikipedia article that refers to it.
 
 Select a `Toponym resolution: batch X` project.
 
